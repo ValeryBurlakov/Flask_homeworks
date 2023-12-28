@@ -1,0 +1,28 @@
+{% extends "clothing.html" %}
+
+{% block title %}Куртки{% endblock %}
+
+{% block content %}<h1>куртки</h1>
+<table>
+    <tr>
+      <th>Фото</th>
+      <th>Цена</th>
+      <th>Описание</th>
+    </tr>
+    <tr>
+      <td><img src="/static/jacket1.jpeg" alt="Куртка 1"></td>
+      <td>1000 рублей</td>
+      <td>Отличная куртка для холодной погоды.</td>
+    </tr>
+    <tr>
+      <td><img src="/static/jacket2.jpeg" alt="Куртка 2"></td>
+      <td>1500 рублей</td>
+      <td>Стильная куртка для повседневной носки.</td>
+    </tr>
+    <tr>
+      <td><img src="/static/jacket3.jpeg" alt="Куртка 3"></td>
+      <td>1200 рублей</td>
+      <td>Удобная и практичная куртка.</td>
+    </tr>
+  </table>
+{% endblock %}
