@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Задание 5{% endblock title %}
+
+{% block content %}
+<h1>Домашнее задание 2, task 5</h1>
+<p>Реализовано: вычитание, умножение, деление
+</p>
+<div class="about">
+    <div class="container">
+        <form action="/task_5" method="post">
+            <input type="number" name="num1" placeholder="Число 1">
+            <select name="operation">
+                <option selected value="addition">+</option>
+                <option selected value="substraction">-</option>
+                <option selected value="multiplication">*</option>
+                <option selected value="division">/</option>
+            </select>
+            <input type="number" name="num2" placeholder="Число 2">
+            <input type="submit" value="Вычислить">
+        </form>
+    </div>
+</div>
+{% endblock %}

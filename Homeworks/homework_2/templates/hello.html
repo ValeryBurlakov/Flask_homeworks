@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Приветствие{% endblock title %}
+
+{% block content %}
+<style>
+    .center {
+        text-align: center;
+    }
+</style>
+
+<h1>Приветствие</h1>
+
+<div class="center">
+    <h2>Hello, {{ name }}</h2>
+    <h2>Email: {{ email }}</h2>
+    <form action="{{ url_for('logout') }}" method="get">
+        <button type="submit">Выйти</button>
+    </form>
+</div>
+
+{% endblock content %}
