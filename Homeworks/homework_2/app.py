@@ -170,14 +170,28 @@ def task_8():
 
 
 # ===============================Homework_2
+# @app.route('/task_9', methods=['GET', 'POST'])
+# def task_9():
+#     if request.method == 'POST':
+#         name = request.form.get('name')
+#         email = request.form.get('email')
+#         response = make_response(redirect(url_for('hello')))
+#         response.set_cookie('user_data', f'{name}:{email}')
+#         return response
+#     return render_template('task_9.html')
 @app.route('/task_9', methods=['GET', 'POST'])
 def task_9():
     if request.method == 'POST':
         name = request.form.get('name')
         email = request.form.get('email')
-        response = make_response(redirect(url_for('hello')))
-        response.set_cookie('user_data', f'{name}:{email}')
-        return response
+        if name and email:  # Проверяем наличие имени и электронной почты
+            response = make_response(redirect(url_for('hello')))
+            response.set_cookie('user_data', f'{name}:{email}')
+            flash('Всё в порядке', 'success')
+            return response
+        else:
+            flash('укажите имя и почту !', 'danger')  # Добавляем сообщение об ошибке
+            return render_template('task_9.html')
     return render_template('task_9.html')
 
 
