@@ -170,15 +170,6 @@ def task_8():
 
 
 # ===============================Homework_2
-# @app.route('/task_9', methods=['GET', 'POST'])
-# def task_9():
-#     if request.method == 'POST':
-#         name = request.form.get('name')
-#         email = request.form.get('email')
-#         response = make_response(redirect(url_for('hello')))
-#         response.set_cookie('user_data', f'{name}:{email}')
-#         return response
-#     return render_template('task_9.html')
 @app.route('/task_9', methods=['GET', 'POST'])
 def task_9():
     if request.method == 'POST':
