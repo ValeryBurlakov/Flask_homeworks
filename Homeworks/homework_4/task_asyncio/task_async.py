@@ -82,7 +82,7 @@ if __name__ == "__main__":
         # (интерпретатор скрипт.py урл_адресы_изображения_через_пробел)
         # python3 task_async.py https://24warez.ru/uploads/posts/2013-09/1378297750_5.jpg https://dasart.ru/userdata/image/dd/e2/dde26818ca61428f7e2c65bfceb69a54.jpg
 
-        print("Вызов метода run_asyncio() в командной строке:")
+        print("Вызов метода run_async() в командной строке:")
         run(run_async(sys.argv[1:], "downloads_command_line"))
     else:
         # Для запуска кнопкой в Pycharm либо в терминале без передачи аргументов
@@ -93,5 +93,5 @@ if __name__ == "__main__":
             'https://24warez.ru/uploads/posts/2013-09/1378297780_1.jpg',
             'https://dasart.ru/userdata/image/45/42/45421a14ec6c8ff137c09cb3281c70a7.jpg'
         ]
-        print("Вызов run_asyncio(urls):")
+        print("Вызов метода run_asyncio(urls):")
         run(run_asyncio(urls))

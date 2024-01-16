@@ -21,7 +21,6 @@
 ![image](images/proc_button.png)
 ### Запуск из терминала
 ![image](images/proc_terminal.png)
-
 ## Многопоточный подход, результат выполнения:
 ### Нажатие кнопкой run
 ![image](images/thread_button.png)
