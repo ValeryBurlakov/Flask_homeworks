@@ -115,7 +115,7 @@ async def get_single_product(product_id: int) -> ProductSchema:
 # 8. Запись товара
 # {"id": 1, "name": "ручка", "description": "шариковая", "price": "15"}
 @app1.post('/products/', response_model=ProductSchema)
-async def create_user(product: ProductInSchema) -> dict:
+async def create_product(product: ProductInSchema) -> dict:
     """Создание нового товара: POST /products/"""
     # hashed_password = await get_password_hash(user.password)
     product_dict = product.model_dump()  # .dict()
