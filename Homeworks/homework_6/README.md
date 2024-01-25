@@ -1,3 +1,4 @@
+### Task_6, база данных для магазина с 3 таблицами
 ## Создалась база данных и таблицы в ней:
 ![image](task_6/images/first_run_create_db_and_tables_1.png)
 ![image](task_6/images/first_run_create_db_and_tables_1.png)
@@ -17,10 +18,11 @@
 ![image](task_6/images/users/POST_new_user.png)
 
 ### ○ 4 Изменение юзера
-### БД
+### БД до
 ![image](task_6/images/users/PUT_before_query.png)
+### запрос
 ![image](task_6/images/users/PUT_change_user_data.png)
-### БД
+### БД после
 ![image](task_6/images/users/PUT_after_changes.png)
 
 ### ○ 5 Удаление юзера
@@ -34,21 +36,21 @@
 
 ### ○ 8 Запись товара
 ![image](task_6/images/products/POST_added_new_product.png)
-### БД
+### БД после
 ![image](task_6/images/products/POST_after_query.png)
 
 ### ○ 9 Изменение товара
 ![image](task_6/images/products/PUT_changes.png)
-### БД
+### БД после
 ![image](task_6/images/products/PUT_after_changes_product.png)
 
 ### ○ 10 Удаление товара
 ![image](task_6/images/products/DELETE_query.png)
-### БД
+### БД после
 ![image](task_6/images/products/DELETE_after_query.png)
 
 
-### ○ 11Чтение всех заказов
+### ○ 11 Чтение всех заказов
 ![image](task_6/images/orders/GET_all_orders.png)
 
 ### ○ 12 Чтение одного заказа
@@ -56,15 +58,15 @@
 
 ### ○ 13 Запись заказа
 ![image](task_6/images/orders/POST_add_new_order.png)
-### БД
+### БД после
 ![image](task_6/images/orders/POST_after_query_order.png)
 
 ### ○ 14 Изменение заказа
 ![image](task_6/images/orders/PUT_changes_oder_status.png)
-### БД
+### БД после
 ![image](task_6/images/orders/PUT_after_query_changes.png)
 
 ### ○ 15 Удаление заказа
 ![image](task_6/images/orders/DELETE_query_order.png)
-### БД
+### БД после
 ![image](task_6/images/orders/DELETE_after_query.png)
